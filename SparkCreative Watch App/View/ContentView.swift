@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        NavigationStack {
+            
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
@@ -17,7 +19,10 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        }
     }
+    
+    @State private var viewModel = CheckInViewModel()
 }
 
 #Preview {
