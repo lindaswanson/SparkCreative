@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct TodaysTreeAfterBreathingView: View {
     var body: some View {
