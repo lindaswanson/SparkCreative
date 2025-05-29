@@ -352,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SparkCreative Watch App/SparkCreative Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -359,6 +360,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SparkCreative-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SparkCreative;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "CalmTree wants to read your Heart Rate to analyze whether the stress calming exercises were successful.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "CalmTree wants to save your Heart Rate to Apple Health's Heart Rate before and after exercises to analyze whether the stress calming exercises were successful.";
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = name.lindaswanson.SparkCreative;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -373,7 +378,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
@@ -382,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SparkCreative Watch App/SparkCreative Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -389,6 +395,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SparkCreative-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SparkCreative;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "CalmTree wants to read your Heart Rate to analyze whether the stress calming exercises were successful.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "CalmTree wants to save your Heart Rate to Apple Health's Heart Rate before and after exercises to analyze whether the stress calming exercises were successful.";
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = name.lindaswanson.SparkCreative;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,7 +414,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
