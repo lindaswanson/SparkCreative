@@ -36,7 +36,7 @@ struct TodaysTreeView: View {
                     .ignoresSafeArea()
                 VStack {
                     Spacer()
-                    Image("TreeBlue")
+                    Image("treeBlue")
                     Text("Displeased")
                     // FIXME: is there a way to define font in one place so every time I change size, I don't have to repeat font name?
                         .font(.custom("Sinhala MN", size: 15))
@@ -61,7 +61,7 @@ struct TodaysTreeView: View {
              */
         }
         .font(.custom("Sinhala MN", size: 20))
-        .foregroundStyle(Color("HunterGreen"))
+        .foregroundStyle(Color("hunterGreen"))
         .onAppear(perform: start)
         
     }
