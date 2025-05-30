@@ -15,7 +15,7 @@ struct TodaysTreeAfterBreathingView: View {
                 Color("Cornsilk")
                     .ignoresSafeArea()
                 Text("TODO: Today's Tree After Breathing. \nFinish once Today's Tree layout is done.")
-                    .foregroundStyle(Color("HunterGreen"))
+                    .foregroundStyle(Color("hunterGreen"))
             }
         }
     }

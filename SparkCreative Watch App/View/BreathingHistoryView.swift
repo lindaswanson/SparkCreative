@@ -11,7 +11,7 @@ struct BreathingHistoryView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color("Sage")
+                Color("sage")
                     .ignoresSafeArea()
                 VStack {
                     Text("Your last 5 exercises")
@@ -23,7 +23,7 @@ struct BreathingHistoryView: View {
                      Text("Duration")
                      Text("BPM After")
                      
-                     } .foregroundStyle(Color("HunterGreen"))
+                     } .foregroundStyle(Color("hunterGreen"))
                      */
                     ScrollView {
                         ForEach(0..<5) { _ in
@@ -32,9 +32,9 @@ struct BreathingHistoryView: View {
                                 ZStack(alignment: .topLeading) {
                                     RoundedRectangle(cornerRadius: 10)
                                         .frame(width: .infinity, alignment: .topLeading)
-                                    //.fill(Color("Feldgrau"))
-                                    //.background(Color("Feldgrau"))
-                                        .foregroundStyle(Color("Feldgrau"))
+                                    //.fill(Color("feldgrau"))
+                                    //.background(Color("feldgrau"))
+                                        .foregroundStyle(Color("feldgrau"))
                                     VStack {
                                         HStack {
                                             Text("5/21/25 10:30am")
@@ -58,11 +58,11 @@ struct BreathingHistoryView: View {
             }
             .navigationTitle {
                 Text("Breathing Log")
-                    .foregroundStyle(Color("HunterGreen"))
+                    .foregroundStyle(Color("hunterGreen"))
             }
         }
         .font(.custom("Sinhala MN", size: 15))
-        .foregroundStyle(Color("HunterGreen"))
+        .foregroundStyle(Color("hunterGreen"))
     }
 }
 
