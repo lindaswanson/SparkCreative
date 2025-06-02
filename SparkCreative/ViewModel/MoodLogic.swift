@@ -21,26 +21,26 @@ import SwiftUI
 //}
 
 enum MoodSlider {
-    case happy
-    case sad
+    case delighted
+    case plesant
     case neutral
-    case angry
-    case stressed
+    case displeased
+    case upset
  
     // this part is for the title to display on the homescreen
     
     var title: String {
         switch self {
-        case .happy:
-            return "\"Happy\""
-        case .sad:
-            return "\"Sad\""
+        case .delighted:
+            return "\"Delighted\""
+        case .plesant:
+            return "\"Plesant\""
         case .neutral:
             return "\"Neutral\""
-        case .angry:
-            return "\"Angry\""
-        case .stressed:
-            return "\"Stressed\""
+        case .displeased:
+            return "\"Displeased\""
+        case .upset:
+            return "\"Upset\""
         }
     }
   
@@ -48,15 +48,15 @@ enum MoodSlider {
     //shakira- changed asset names
     var treeColor: Image {
         switch self {
-        case .happy:
-            return Image("blueTree")
-        case .sad:
-            return Image("greenTree")
-        case .neutral:
-            return Image("yellowTree")
-        case .angry:
+        case .delighted:
             return Image("orangeTree")
-        case .stressed:
+        case .plesant:
+            return Image("yellowTree")
+        case .neutral:
+            return Image("greenTree")
+        case .displeased:
+            return Image("blueTree")
+        case .upset:
             return Image("redTree")
         }
     }

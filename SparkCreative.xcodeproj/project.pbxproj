@@ -39,9 +39,22 @@
 		EF47FC492DD66862003923E7 /* SparkCreative Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SparkCreative Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3D5630AD2DEE2C9F004961A1 /* Exceptions for "SparkCreative" folder in "SparkCreative" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EF47FC3B2DD66861003923E7 /* SparkCreative */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EF47FC3E2DD66861003923E7 /* SparkCreative */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3D5630AD2DEE2C9F004961A1 /* Exceptions for "SparkCreative" folder in "SparkCreative" target */,
+			);
 			path = SparkCreative;
 			sourceTree = "<group>";
 		};
@@ -415,6 +428,7 @@
 				DEVELOPMENT_TEAM = 8BYXXD83Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparkCreative/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SparkCreative;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -446,6 +460,7 @@
 				DEVELOPMENT_TEAM = 8BYXXD83Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparkCreative/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SparkCreative;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

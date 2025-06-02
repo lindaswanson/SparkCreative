@@ -26,27 +26,30 @@ struct WelcomeView: View {
                     """)
                         .bold()
                         .font(.largeTitle)
-                        .frame(width: 300, height: 300)
+//                        .frame(width: 300, height: 300)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.hunterGreen)
                     
                     Image("tree")
                     Text("""
-                        take a deep breath- Youre in the right place. Like the rhythm in the treesm we're here to help you track your stress and find balance, naturally. Let's reduce your stress together.
+                        Take a deep breath- Youre in the right place. Like the rhythm in the treesm we're here to help you track your stress and find balance, naturally. Let's reduce your stress together.
                         """)
                     
-                    .frame(width: 250, height: 250)
+              //      .frame(width: 250, height: 250)
                     .multilineTextAlignment(.center)
+                   
+                    .font(.custom("SinhalaMN", size:20))
+                    .fontWeight(.bold)
                     .foregroundColor(.hunterGreen)
-                    .font(.caption)
-                    .bold()
+                    .padding()
                     
                     LetsGoButton()
                     .fullScreenCover(isPresented: $goToWelcomeScreen) {
                         EnterNameView()
                     }
-                    
+                    .padding()
                 }
+                .padding()
             }
         }
     }

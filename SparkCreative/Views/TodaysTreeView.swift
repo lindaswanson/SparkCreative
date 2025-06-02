@@ -33,9 +33,12 @@ struct TodaysTreeView: View {
         
         NavigationStack {
             ZStack{
+                Color.beige
+                    .ignoresSafeArea()
                 VStack{
                     Text("Todays Tree")
-                        .font(.title)
+                        .font(.custom("Sinhala MN", size: 30))
+                        .foregroundStyle(Color.hunterGreen)
                         .bold()
                     //image of the correlated tree
                     
@@ -55,9 +58,18 @@ struct TodaysTreeView: View {
                         .frame(width: 200, height: 200)
                     
                     Text("mood: \(appData.currentCalendarEntry.mood)")//data
+                        .font(.custom("Sinhala MN", size: 25))
+                        .foregroundStyle(Color.hunterGreen)
+                        .bold()
                     Text("Your emotions: \(appData.currentCalendarEntry.selectedEmotions.joined(separator: ", "))")
+                        .font(.custom("Sinhala MN", size: 25))
+                        .foregroundStyle(Color.hunterGreen)
+                        .bold()
                     //selected from previous screen
                     Text("Your circumstances:  \(appData.currentCalendarEntry.selectedCircumstances.joined(separator: ", "))")
+                        .font(.custom("Sinhala MN", size: 25))
+                        .foregroundStyle(Color.hunterGreen)
+                        .bold()
                     //selected from previous screen
 
                     //bubbles of data
@@ -72,6 +84,7 @@ struct TodaysTreeView: View {
                     //                        CalendarView()
                     //                    }
                 }
+                
             }
             NavigationLink(destination: CheckInView(currentTab: .calendar, name: name), isActive: $goToCalendar) {
         
@@ -94,9 +107,9 @@ struct TodaysTreeView: View {
         }, label: {
             Text("Plant Tree")
                 .font(.headline)
-                .foregroundColor(.white)
-                .frame(width: 100, height: 80)
-                .background(Color.blue)
+                .foregroundColor(.beige)
+                .frame(width: 163, height: 66)
+                .background(Color.hunterGreen)
                 .cornerRadius(20)
         })
        
@@ -111,9 +124,9 @@ struct TodaysTreeView: View {
         }, label: {
             Text("Try Breathing exercise")
                 .font(.headline)
-                .foregroundColor(.white)
-                .frame(width: 100, height: 80)
-                .background(Color.blue)
+                .foregroundColor(.beige)
+                .frame(width: 163, height: 66)
+                .background(Color.hunterGreen)
                 .cornerRadius(20)
         })
     }
@@ -123,16 +136,16 @@ struct TodaysTreeView: View {
 extension MoodSlider {
     static func from(mood: String) -> MoodSlider {
         switch mood.lowercased() {
-        case "happy":
-            return .happy
-        case "sad":
-            return .sad
+        case "delighted":
+            return .delighted
+        case "plesant":
+            return .plesant
         case "neutral":
             return .neutral
-        case "angry":
-            return .angry
-        case "stressed":
-            return .stressed
+        case "displeased":
+            return .displeased
+        case "upset":
+            return .upset
         default:
             return .neutral
         }

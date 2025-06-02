@@ -17,15 +17,15 @@ class MoodViewModel: ObservableObject {
     func getMood() -> MoodSlider {
         switch progress {
         case 0..<0.2:
-            return .happy
+            return .delighted
         case 0.2..<0.4:
-            return .sad
+            return .plesant
         case 0.4..<0.6:
             return .neutral
         case 0.6..<0.8:
-            return .angry
+            return .displeased
         default:
-            return .stressed
+            return .upset
         }
     }
     //shakira

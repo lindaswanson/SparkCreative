@@ -94,13 +94,13 @@ struct SliderView: View {
     func leafColor(for progress: CGFloat) -> Image{
         switch progress {
         case 0..<0.2:
-            return Image("blueLeaf")
-        case 0.2..<0.4:
-            return Image("greenLeaf")
-        case 0.4..<0.6:
-            return Image("yellowLeaf")
-        case 0.6..<0.8:
             return Image("orangeLeaf")
+        case 0.2..<0.4:
+            return Image("yellowLeaf")
+        case 0.4..<0.6:
+            return Image("greenLeaf")
+        case 0.6..<0.8:
+            return Image("blueLeaf")
         default:
             return Image("redLeaf")
         }
@@ -108,13 +108,13 @@ struct SliderView: View {
     func treeColor(for progress: CGFloat) -> Image{
         switch progress {
         case 0..<0.2:
-            return Image("blueTree")
-        case 0.2..<0.4:
-            return Image("greenTree")
-        case 0.4..<0.6:
-            return Image("yellowTree")
-        case 0.6..<0.8:
             return Image("orangeTree")
+        case 0.2..<0.4:
+            return Image("yellowTree")
+        case 0.4..<0.6:
+            return Image("greenTree")
+        case 0.6..<0.8:
+            return Image("blueTree")
         default:
             return Image("redTree")
         }
