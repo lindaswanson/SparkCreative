@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomCalendarView: View {
-    @EnvironmentObject var appData: AppDataModel
+   // @EnvironmentObject var appData: AppDataModel
 
     let columns: [GridItem] = Array(repeating: GridItem(.flexible(), spacing: 10), count: 7)
     let days = Calendar.current.shortWeekdaySymbols
@@ -36,7 +36,7 @@ struct CustomCalendarView: View {
                 .padding()
             }
         }.onAppear{
-            print(appData.entries)
+         //   print(appData.entries)
         }
     }
     
@@ -57,4 +57,5 @@ struct CustomCalendarView: View {
 
 #Preview {
     CustomCalendarView()
+       // .environmentObject(AppDataModel())
 }

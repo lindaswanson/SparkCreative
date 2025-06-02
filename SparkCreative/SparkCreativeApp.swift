@@ -11,11 +11,20 @@ import SwiftUI
 struct SparkCreativeApp: App {
     @StateObject var appData = AppDataModel()
     //@StateObject var moodData = MoodModel()
+    // Shakira - added onboarding status using AppStorage
+    @AppStorage("hasCompletedOnboarding") var hasCompletedOnboarding: Bool = false
+    
+
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
-                .environmentObject(appData)
-                //.environmentObject(moodData)
+            Group { //revise what group is
+                if hasCompletedOnboarding {
+                    HomeScreenView(name: "Shakira")
+                } else {
+                    WelcomeView()
+                }
+            }
+           .environmentObject(appData)
         }
     }
 }

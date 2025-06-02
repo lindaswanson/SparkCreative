@@ -9,7 +9,9 @@ import SwiftUI
 
 struct EnterNameView: View {
     @EnvironmentObject var appData: AppDataModel
-
+    
+    //Shakira - added boolean for onboarding
+    @AppStorage("hasCompletedOnboarding") var hasCompletedOnboarding: Bool = false
    // var mood: String
     @State private var goToHomeScreen = false
     @State var name: String = ""
@@ -65,6 +67,9 @@ struct EnterNameView: View {
     func NextButtonToHomeScreen() -> some View {
         Button(action: {
             goToHomeScreen = true
+            
+            //Shakira - set boolean to true if onboarding is completed
+            hasCompletedOnboarding = true
         }, label: {
             Image("nextButton")
 //            Text("GET STARTED")

@@ -29,14 +29,18 @@ struct QuestionaireViewTwo: View {
             VStack{
                 Text("What is impacting you right now?")
                 Text("Choose a category below")
+                //shakira - added only choose 3
+                Text("Select up to 3 circumstances")
                 
                 LazyVGrid(columns: columns, spacing: 16){
                     ForEach(categories, id: \.self) { category in
                         Button(action: {
                             if appData.currentCalendarEntry.selectedCircumstances.contains(category) {
                                 appData.currentCalendarEntry.selectedCircumstances.removeAll { $0 == category }
-                            } else {
+                //Shakira - added condition so they can only pick up to 3
+                            } else if appData.currentCalendarEntry.selectedCircumstances.count <= 3 {
                                 appData.currentCalendarEntry.selectedCircumstances.append(category)
+                             
                             }
                         }, label:{
                             Text(category)

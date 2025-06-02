@@ -24,6 +24,9 @@ struct QuestionaireViewOne: View {
             VStack{
                 Text("Lets dig deeper into how you are feeling")
                 Text("Choose an emotionthat  best describes your stress level")
+                
+                //shakira - added only choose 3
+                Text("Select up to 3 emotions")
                     .frame(alignment: .center)
                 VStack{
                     
@@ -34,20 +37,23 @@ struct QuestionaireViewOne: View {
                                 Button(action: {
                                     if appData.currentCalendarEntry.selectedEmotions.contains(emotion){
                                         appData.currentCalendarEntry.selectedEmotions.removeAll{ $0 == emotion }
-                                    } else {
+                    //Shakira - added condition so they can only pick up to 3
+                                    } else if appData.currentCalendarEntry.selectedEmotions.count <= 3{
                                         appData.currentCalendarEntry.selectedEmotions.append(emotion)
                                     }
+                                    //revise
+                                    
                                 }) {
                                     Text(emotion)
                                         .frame(width: 60, height: 40)
                                         .background(appData.currentCalendarEntry.selectedEmotions.contains(emotion) ? Color.blue : Color.gray)
                                         .foregroundStyle(.white)
                                         .cornerRadius(10)
+                                      
                                 }
                             }
                         }
                     }
-                    
                 }
                 NextQuestionaireScreen()
                     .navigationDestination(isPresented: $goToQuestionaireTwo) {

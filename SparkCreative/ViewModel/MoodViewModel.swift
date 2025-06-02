@@ -28,6 +28,10 @@ class MoodViewModel: ObservableObject {
             return .stressed
         }
     }
+    //shakira
+    var treeColor: Image {
+        getMood().treeColor
+    }
     
 //    func getTreeColor() -> Image{
 //            switch self {

@@ -26,6 +26,8 @@ enum MoodSlider {
     case neutral
     case angry
     case stressed
+ 
+    // this part is for the title to display on the homescreen
     
     var title: String {
         switch self {
@@ -41,19 +43,21 @@ enum MoodSlider {
             return "\"Stressed\""
         }
     }
-    
+  
+    // this part is to display the leaf on the home screen
+    //shakira- changed asset names
     var treeColor: Image {
         switch self {
         case .happy:
-            return Image("blueLeaf")
+            return Image("blueTree")
         case .sad:
-            return Image("greenLeaf")
+            return Image("greenTree")
         case .neutral:
-            return Image("yellowLeaf")
+            return Image("yellowTree")
         case .angry:
-            return Image("orangeLeaf")
+            return Image("orangeTree")
         case .stressed:
-            return Image("redLeaf")
+            return Image("redTree")
         }
     }
 }

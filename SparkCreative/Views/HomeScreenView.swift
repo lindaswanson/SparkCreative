@@ -14,6 +14,7 @@ struct HomeScreenView: View {
     @StateObject var viewModel = MoodViewModel()
     
     @State private var goToQuestionaire = false
+    
     var name: String
  
     
@@ -35,7 +36,7 @@ struct HomeScreenView: View {
                         .font(.title)
                         .fontWeight(.bold)
                     
-                    NextButton
+                    NextButton()
                 
                 }
                 .navigationDestination(isPresented: $goToQuestionaire) {
@@ -47,9 +48,12 @@ struct HomeScreenView: View {
         }
     }
     
-    var NextButton: some View {
+    func NextButton() -> some View {
         Button(action: {
             appData.currentCalendarEntry.mood = viewModel.getMood().title
+            
+            //NTS: Shak revisit
+            
           goToQuestionaire = true
         }, label: {
             Image("nextButton")
