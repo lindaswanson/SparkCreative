@@ -14,6 +14,7 @@ struct HomeScreenView: View {
     @StateObject var viewModel = MoodViewModel()
     
     @State private var goToQuestionaire = false
+    
     var name: String
  
     
@@ -31,11 +32,11 @@ struct HomeScreenView: View {
                     ))//revise this 
                     //mood
                     Text(viewModel.getMood().title)
-                        .foregroundColor(.blue)
-                        .font(.title)
+                        .font(.custom("SinhalaMN", size:30))
                         .fontWeight(.bold)
+                        .foregroundColor(.hunterGreen)
                     
-                    NextButton
+                    NextButton()
                 
                 }
                 .navigationDestination(isPresented: $goToQuestionaire) {
@@ -47,9 +48,12 @@ struct HomeScreenView: View {
         }
     }
     
-    var NextButton: some View {
+    func NextButton() -> some View {
         Button(action: {
             appData.currentCalendarEntry.mood = viewModel.getMood().title
+            
+            //NTS: Shak revisit
+            
           goToQuestionaire = true
         }, label: {
             Image("nextButton")
@@ -73,19 +77,27 @@ struct HomeScreenView: View {
         var body: some View {
             VStack{
                 Text("Hey \(name)")
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .font(.largeTitle)
+                    .font(.custom("SinhalaMN", size:20))
+                    .fontWeight(.bold)
                     .foregroundColor(.hunterGreen)
-                    //.foregroundStyle(.black)
+                    .padding()
                     
                 Text("Time for your daily check in!")
+                    .font(.custom("SinhalaMN", size:30))
+                    .fontWeight(.bold)
                     .foregroundColor(.hunterGreen)
+                    .padding()
+
+                    
                 
                 Text("What is your stress level today?")
+                    .font(.custom("SinhalaMN", size:20))
+                    .fontWeight(.bold)
                     .foregroundColor(.hunterGreen)
 
             }
-            .padding(.bottom, -100)
+            .multilineTextAlignment(.center)
+            .padding()
         }
     }
     

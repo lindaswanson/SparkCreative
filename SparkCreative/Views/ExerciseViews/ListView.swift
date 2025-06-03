@@ -26,26 +26,29 @@ struct ListView: View {
             List {
                 ForEach(exercises) { exercise in
                     ZStack {
-                        
                         RoundedRectangle(cornerRadius: 12)
-                            .fill(Color.blue)
+                            .fill(Color.feldgrau)
                             .frame(maxWidth: .infinity, minHeight: 100)
                         
-                        VStack(alignment: .leading, spacing: 6) {
+                        VStack {
                             Text(exercise.title)
-                                .font(.headline)
-                                .foregroundColor(.white)
+                                .font(.custom("SinhalaMN", size: 20))
+                                .foregroundColor(.mintGreen)
+                                .fontWeight(.bold)
                             
                             Text(exercise.description)
-                                .font(.subheadline)
-                                .foregroundColor(.white.opacity(0.9))
+                                .font(.custom("SinhalaMN", size: 18))
+                                .foregroundColor(.mintGreen.opacity(0.9))
                         }
-                        .padding()
+//                        .padding()
                     }
                     .listRowInsets(EdgeInsets()) // remove default List padding
                     .padding(.vertical, 6) // space between items
                 }
+                .listRowBackground(Color.clear)
             }
+            .background(.beige)
+            .scrollContentBackground(.hidden)
         }
     }
 }

@@ -40,10 +40,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		EF2EEF162DDFC07B00D60EBB /* Exceptions for "SparkCreative Watch App" folder in "SparkCreative" target */ = {
+		3D5630AD2DEE2C9F004961A1 /* Exceptions for "SparkCreative" folder in "SparkCreative" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				SinhalaMN.ttc,
+				Info.plist,
 			);
 			target = EF47FC3B2DD66861003923E7 /* SparkCreative */;
 		};
@@ -52,14 +52,14 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EF47FC3E2DD66861003923E7 /* SparkCreative */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3D5630AD2DEE2C9F004961A1 /* Exceptions for "SparkCreative" folder in "SparkCreative" target */,
+			);
 			path = SparkCreative;
 			sourceTree = "<group>";
 		};
 		EF47FC4D2DD66862003923E7 /* SparkCreative Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				EF2EEF162DDFC07B00D60EBB /* Exceptions for "SparkCreative Watch App" folder in "SparkCreative" target */,
-			);
 			path = "SparkCreative Watch App";
 			sourceTree = "<group>";
 		};
@@ -355,7 +355,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SparkCreative Watch App/SparkCreative Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8BYXXD83Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SparkCreative-Watch-App-Info.plist";
@@ -390,7 +390,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SparkCreative Watch App/SparkCreative Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8BYXXD83Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SparkCreative-Watch-App-Info.plist";
@@ -425,9 +425,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 469R7S2Q8V;
+				DEVELOPMENT_TEAM = 8BYXXD83Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparkCreative/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SparkCreative;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -456,9 +457,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 469R7S2Q8V;
+				DEVELOPMENT_TEAM = 8BYXXD83Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparkCreative/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SparkCreative;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

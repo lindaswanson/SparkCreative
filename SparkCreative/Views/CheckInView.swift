@@ -54,6 +54,7 @@ struct CheckInView: View {
                         }
                         .tag(navBarType.exercise)
                 }
+                .tint(.hunterGreen)
             }
 //            .onAppear {
 //                print(currentTab)
@@ -74,7 +75,8 @@ struct CheckInView: View {
         Button(action: {
             
         }, label: {
-            Image(systemName: "gearshape.fill")
+            Image(systemName: "gearshape")
+                .tint(.hunterGreen)
                 
         })
     }

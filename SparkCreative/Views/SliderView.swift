@@ -64,6 +64,7 @@ struct SliderView: View {
                     .scaledToFit()
                     .frame(width: 150, height: 150)
                    // .foregroundColor(leafColor(for: progress))
+        
                 
                
 //                let mood: MoodSlider = .happy
@@ -93,6 +94,15 @@ struct SliderView: View {
     func leafColor(for progress: CGFloat) -> Image{
         switch progress {
         case 0..<0.2:
+<<<<<<< HEAD
+            return Image("orangeLeaf")
+        case 0.2..<0.4:
+            return Image("yellowLeaf")
+        case 0.4..<0.6:
+            return Image("greenLeaf")
+        case 0.6..<0.8:
+            return Image("blueLeaf")
+=======
             return Image("leafBlue")
         case 0.2..<0.4:
             return Image("leafGreen")
@@ -100,8 +110,23 @@ struct SliderView: View {
             return Image("leafYellow")
         case 0.6..<0.8:
             return Image("leafOrange")
+>>>>>>> main
         default:
             return Image("leafRed")
+        }
+    }
+    func treeColor(for progress: CGFloat) -> Image{
+        switch progress {
+        case 0..<0.2:
+            return Image("orangeTree")
+        case 0.2..<0.4:
+            return Image("yellowTree")
+        case 0.4..<0.6:
+            return Image("greenTree")
+        case 0.6..<0.8:
+            return Image("blueTree")
+        default:
+            return Image("redTree")
         }
     }
     
