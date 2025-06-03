@@ -36,15 +36,15 @@ class MoodViewModel: ObservableObject {
 //    func getTreeColor() -> Image{
 //            switch self {
 //            case .happy:
-//                return Image("blueLeaf")
+//                return Image("leafBlue")
 //            case .sad:
-//                return Image("greenLeaf")
+//                return Image("leafGreen")
 //            case .neutral:
-//                return Image("yellowLeaf")
+//                return Image("leafYellow")
 //            case .angry:
-//                return Image("orangeLeaf")
+//                return Image("leafOrange")
 //            case .stressed:
-//                return Image("redLeaf")
+//                return Image("leafRed")
 //            }
 //        }
     }

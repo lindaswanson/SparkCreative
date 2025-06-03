@@ -14,12 +14,12 @@ struct BreathingAnimationView: View {
                 Color("Cornsilk")
                     .ignoresSafeArea()
                 Text("TODO: Pull in Breathing Animation from other app I built.")
-                    .foregroundStyle(Color("HunterGreen"))
+                    .foregroundStyle(Color("hunterGreen"))
 
             }
             .navigationTitle {
                 Text("Breathing Exercise")
-                    .foregroundStyle(Color("HunterGreen"))
+                    .foregroundStyle(Color("hunterGreen"))
             }
         }
 

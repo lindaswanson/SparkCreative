@@ -48,6 +48,7 @@ enum MoodSlider {
     //shakira- changed asset names
     var treeColor: Image {
         switch self {
+<<<<<<< HEAD:SparkCreative/ViewModel/MoodLogic.swift
         case .delighted:
             return Image("orangeTree")
         case .plesant:
@@ -58,6 +59,18 @@ enum MoodSlider {
             return Image("blueTree")
         case .upset:
             return Image("redTree")
+=======
+        case .happy:
+            return Image("leafBlue")
+        case .sad:
+            return Image("leafGreen")
+        case .neutral:
+            return Image("leafYellow")
+        case .angry:
+            return Image("leafOrange")
+        case .stressed:
+            return Image("leafRed")
+>>>>>>> main:SparkCreative/Model/sliderMoodModel.swift
         }
     }
 }
